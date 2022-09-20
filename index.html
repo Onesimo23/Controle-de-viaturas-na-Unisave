@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carros na Unisave</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="short cut icon" href="Img/favicon.png">
+</head>
+
+<body>
+    <main>
+        <img src="Img/favicon.png" alt="Logotipo da Unisave">
+    </main>
+    <h1>Sistema de Controle de Carros dentro do campus da Unisave-Sede</h1>
+    <div>
+        <input type="text" id="name" placeholder="Marca do veículo ex:(Hyundai Elantra)" autocomplete="off">
+        <input type="text" id="licence" placeholder="Matricula do veículo. ex(AAA 111 MZ)" autocomplete="off">
+        <!-- <input type="text" id="cargo" placeholder="Cargo do dono do veículo" autocomplete="off"> -->
+
+        <div class="select" style="width: 100%;">
+            <select name="list" id="cargo">
+                <!-- <option selected >Escolha uma opção</option> -->
+                <option value="Estudante">Estudante</option>
+                <option value="Funcionário">Funcionário</option>
+                <option value="Visitante">Visitante</option>
+            </select>
+        </div>
+        <input type="text" id="dono" placeholder="ID do Condutor(BI/carta de condução)"  autocomplete="off">
+        <button id="send" class="success">Registrar</button>
+        <!-- botao e input de pesquisa d-_-b  -->
+        <input type="text" id="ps" placeholder="Pesquisar Carro" autocomplete="off">
+        <button id="psb" class="successbt2">Pesquisar</button>
+
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome do Veículo</th>
+                <th>Matrícula</th>
+                <th>Cargo</th>
+                <th>ID do Condutor</th>
+                <th>Hora de Entrada</th>
+                <th>Senha</th>
+                <th>Ações</th>
+
+            </tr>
+        </thead>
+        <tbody id="garage">
+        </tbody>
+
+    </table>
+</body>
+
+<script src="Javascript/main.js"></script>
+
+</html>
